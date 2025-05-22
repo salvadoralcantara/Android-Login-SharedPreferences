@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace = "sv.edu.ues.loginapp"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "sv.edu.ues.loginapp"
         minSdk = 21
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
