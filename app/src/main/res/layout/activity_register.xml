@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF1F1F9"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/titleRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro de Usuario"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:id="@+id/edtUsuario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa tu usuario"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:backgroundTint="#3366FF"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@id/titleRegister"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa tu contraseña"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:backgroundTint="#3366FF"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/edtUsuario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/edtConfirmPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Confirmar contraseña"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:backgroundTint="#3366FF"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/edtPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Correo electrónico"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:backgroundTint="#3366FF"
+        android:inputType="textEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/edtConfirmPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:backgroundTint="#3366FF"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/edtEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regresar"
+        android:backgroundTint="#3366FF"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/btnGuardar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/labelCreditos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="636dp"
+        android:text="© JA22005, RC22051"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
