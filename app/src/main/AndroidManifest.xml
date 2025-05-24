@@ -14,20 +14,17 @@
         android:theme="@style/Theme.LoginApp"
         tools:targetApi="31">
 
-        <!-- Actividad para registrar usuario -->
         <activity
             android:name=".RegisterActivity"
             android:label="Registrar usuario"
             android:exported="false" />
 
-        <!-- Actividad con Navigation Drawer -->
         <activity
             android:name=".HomeActivity"
             android:exported="false"
             android:label="@string/title_activity_home"
             android:theme="@style/Theme.LoginApp.NoActionBar" />
 
-        <!-- Pantalla de inicio (login) -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
@@ -37,7 +34,5 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
-
 </manifest>

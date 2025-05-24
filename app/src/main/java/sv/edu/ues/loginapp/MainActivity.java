@@ -27,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
         btnIngresar = findViewById(R.id.btnIngresar);
         btnSalir = findViewById(R.id.btnSalir);
 
-        // Establecer el título en la ActionBar
         if (getSupportActionBar() != null) {
             getSupportActionBar().setTitle("Login");
         }
@@ -47,28 +46,22 @@ public class MainActivity extends AppCompatActivity {
             String passGuardado = prefs.getString("password", "");
 
             if (usuario.equals(userGuardado) && password.equals(passGuardado)) {
-                // Redirigir a HomeActivity
                 Intent intent = new Intent(MainActivity.this, HomeActivity.class);
                 startActivity(intent);
-                finish(); // cerrar pantalla de login
+                finish();
             } else {
                 Toast.makeText(MainActivity.this, "Usuario o contraseña inválidos", Toast.LENGTH_SHORT).show();
             }
         });
 
-        // Botón Salir
         btnSalir.setOnClickListener(v -> finishAffinity());
     }
-
-    // Inflar el menú en la barra de opciones
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_main, menu); // Asegúrate que el archivo se llame menu_main.xml
+        inflater.inflate(R.menu.menu_main, menu);
         return true;
     }
-
-    // Manejar selección de opciones del menú
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
@@ -80,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
             finishAffinity();
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 }

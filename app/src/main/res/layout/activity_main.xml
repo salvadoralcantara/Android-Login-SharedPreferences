@@ -9,7 +9,6 @@
     android:background="#FFF1F1F9"
     tools:context=".MainActivity">
 
-
     <TextView
         android:id="@+id/labelUsuario2"
         android:layout_width="wrap_content"
@@ -34,8 +33,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="40dp" />
-
-    <!-- Usuario -->
 
     <TextView
         android:id="@+id/labelUsuario"
@@ -64,7 +61,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="33dp" />
 
-    <!-- Password -->
     <TextView
         android:id="@+id/labelPassword"
         android:layout_width="wrap_content"
@@ -92,7 +88,6 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="32dp" />
 
-    <!-- Botón Ingresar -->
     <Button
         android:id="@+id/btnIngresar"
         android:layout_width="wrap_content"
@@ -104,9 +99,6 @@
         app:layout_constraintTop_toBottomOf="@id/edtPassword"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="64dp" />
-
-
-    <!-- Botón Salir -->
 
     <TextView
         android:id="@+id/labelCreditos"

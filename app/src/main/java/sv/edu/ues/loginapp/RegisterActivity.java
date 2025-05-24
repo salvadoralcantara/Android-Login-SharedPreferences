@@ -10,7 +10,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class RegisterActivity extends AppCompatActivity {
-
     EditText edtUsuario, edtPassword, edtConfirmPassword, edtEmail;
     Button btnGuardar, btnRegresar;
 
@@ -53,7 +52,6 @@ public class RegisterActivity extends AppCompatActivity {
                 return;
             }
 
-            // Guardar en SharedPreferences
             SharedPreferences prefs = getSharedPreferences("usuarioPrefs", MODE_PRIVATE);
             SharedPreferences.Editor editor = prefs.edit();
             editor.putString("usuario", usuario);
@@ -62,7 +60,6 @@ public class RegisterActivity extends AppCompatActivity {
 
             Toast.makeText(this, "Usuario registrado correctamente", Toast.LENGTH_SHORT).show();
 
-            // Limpiar campos
             edtUsuario.setText("");
             edtPassword.setText("");
             edtConfirmPassword.setText("");
