@@ -1,11 +1,11 @@
 # Evaluación Práctica 1
 
-##Alumnos:
+Alumnos:
 
 Salvador Isaías Juárez Alcántara - JA22005
 Guillermo Alexander Rodríguez Cortez - RC22051
 
-##Fecha:
+Fecha:
 23/05/2024
 
 
